@@ -32906,9 +32906,12 @@
 					],
 					"props": {
 						"skill": "Breaching",
-						"model": "chars/Weapons/Mace2H_LegionE3.fbx"
+						"model": "chars/Weapons/Mace2H_LegionE3.fbx",
+						"feature": "Edoran3",
+						"disableLoot": true,
+						"flags": 128
 					},
-					"done": 3,
+					"done": 2,
 					"icon": {
 						"file": "ui/Icons/GearIcons/2HHammersIcons.png",
 						"size": 96,
@@ -33354,7 +33357,7 @@
 						"height": 2
 					},
 					"type": "Axe",
-					"price": 151,
+					"price": 121,
 					"rarity": 1,
 					"desc": "Le fil de cette hache est affûté comme un rasoir."
 				},
@@ -53067,7 +53070,7 @@
 					"iconeDone": true,
 					"price": 30,
 					"rarity": 0,
-					"type": "HelmetMedium"
+					"type": "HelmetHeavy"
 				},
 				{
 					"id": "HeavyHelmetUncoMilitia",
@@ -63655,7 +63658,7 @@
 					],
 					"props": {
 						"disableLoot": true,
-						"requireLevel": 16,
+						"requireLevel": 20,
 						"model": "chars/Horse/Model_HorseArmor_03.fbx",
 						"passiveSkill": "PowerArmorPonyDamageReturn",
 						"flags": 128
@@ -67993,72 +67996,6 @@
 					"done": 2
 				},
 				{
-					"id": "BrutalWaveManual",
-					"name": "",
-					"weight": 0.5,
-					"baseBonus": [],
-					"props": {
-						"special": 2,
-						"skill": "BrutalWave",
-						"flags": 64
-					},
-					"icon": {
-						"file": "ui/Icons_Resources.png",
-						"size": 96,
-						"x": 1,
-						"y": 8
-					},
-					"type": "SkillManual",
-					"price": 60,
-					"rarity": 2,
-					"iconeDone": true,
-					"done": 2
-				},
-				{
-					"id": "SpecializedShotManual",
-					"name": "",
-					"weight": 0.5,
-					"baseBonus": [],
-					"props": {
-						"special": 2,
-						"skill": "SpecializedShot",
-						"flags": 64
-					},
-					"icon": {
-						"file": "ui/Icons_Resources.png",
-						"size": 96,
-						"x": 1,
-						"y": 8
-					},
-					"type": "SkillManual",
-					"price": 60,
-					"rarity": 2,
-					"iconeDone": true,
-					"done": 2
-				},
-				{
-					"id": "PrisonnerPurgeManual",
-					"name": "",
-					"weight": 0.5,
-					"baseBonus": [],
-					"props": {
-						"special": 2,
-						"skill": "PrisonnerPurge",
-						"flags": 64
-					},
-					"icon": {
-						"file": "ui/Icons_Resources.png",
-						"size": 96,
-						"x": 1,
-						"y": 8
-					},
-					"type": "SkillManual",
-					"price": 60,
-					"rarity": 2,
-					"iconeDone": true,
-					"done": 2
-				},
-				{
 					"id": "SimpleShotManual",
 					"name": "",
 					"weight": 0.5,
@@ -68143,28 +68080,6 @@
 					"type": "SkillManual",
 					"price": 40,
 					"rarity": 2,
-					"iconeDone": true,
-					"done": 2
-				},
-				{
-					"id": "BraveExPrisonnerManual",
-					"name": "",
-					"weight": 0.5,
-					"baseBonus": [],
-					"props": {
-						"special": 2,
-						"skill": "BraveExPrisonner",
-						"flags": 64
-					},
-					"icon": {
-						"file": "ui/Icons_Resources.png",
-						"size": 96,
-						"x": 1,
-						"y": 8
-					},
-					"type": "SkillManual",
-					"price": 60,
-					"rarity": 3,
 					"iconeDone": true,
 					"done": 2
 				},
@@ -77625,7 +77540,7 @@
 					"name": "Restes humains",
 					"weight": 10,
 					"props": {
-						"foodQuantity": 1
+						"foodQuantity": 0
 					},
 					"icon": {
 						"file": "ui/Icons_Resources.png",
@@ -77646,7 +77561,7 @@
 					"weight": 10,
 					"baseBonus": [],
 					"props": {
-						"foodQuantity": 1
+						"foodQuantity": 0
 					},
 					"iconeDone": true,
 					"icon": {
@@ -77665,9 +77580,7 @@
 					"name": "",
 					"weight": 10,
 					"baseBonus": [],
-					"props": {
-						"foodQuantity": 1
-					},
+					"props": {},
 					"iconeDone": true,
 					"type": "Corpse",
 					"icon": {
@@ -77685,7 +77598,7 @@
 					"weight": 2,
 					"baseBonus": [],
 					"props": {
-						"foodQuantity": 1
+						"foodQuantity": 0
 					},
 					"icon": {
 						"file": "ui/Icons/Icons_Resources_02.png",
@@ -102911,52 +102824,6 @@
 					"desc": "Permet d'améliorer une compétence de lycanthrope."
 				},
 				{
-					"id": "MutationBraveExPrisonnerWerewolf",
-					"name": "Mutation valeureuse",
-					"weight": 0.3,
-					"baseBonus": [],
-					"props": {
-						"refItem": "Flask",
-						"disableLoot": true,
-						"wealth": 1,
-						"skill": "BraveExPrisonnerWerewolf"
-					},
-					"done": 0,
-					"icon": {
-						"file": "ui/Icons_Resources_04.png",
-						"size": 96,
-						"x": 17,
-						"y": 13
-					},
-					"type": "Injection",
-					"price": 17,
-					"rarity": 1,
-					"iconeDone": true
-				},
-				{
-					"id": "MutationAdaptativeWerewolf",
-					"name": "Stimulant de survie",
-					"weight": 0.3,
-					"baseBonus": [],
-					"props": {
-						"refItem": "Flask",
-						"disableLoot": true,
-						"wealth": 1,
-						"skill": "AdaptativeWerewolf"
-					},
-					"done": 0,
-					"icon": {
-						"file": "ui/Icons_Resources_04.png",
-						"size": 96,
-						"x": 19,
-						"y": 13
-					},
-					"type": "Injection",
-					"price": 17,
-					"rarity": 1,
-					"iconeDone": true
-				},
-				{
 					"id": "MutationWerewolfNumericalStrength",
 					"name": "Stimulant de l'instinct de meute",
 					"weight": 0.3,
@@ -102966,52 +102833,6 @@
 						"disableLoot": true,
 						"wealth": 1,
 						"skill": "WerewolfNumericalStrength"
-					},
-					"done": 0,
-					"icon": {
-						"file": "ui/Icons_Resources_04.png",
-						"size": 96,
-						"x": 19,
-						"y": 13
-					},
-					"type": "Injection",
-					"price": 17,
-					"rarity": 1,
-					"iconeDone": true
-				},
-				{
-					"id": "MutationWerewolfInstinctReaction",
-					"name": "Stimulant d'instinct",
-					"weight": 0.3,
-					"baseBonus": [],
-					"props": {
-						"refItem": "Flask",
-						"disableLoot": true,
-						"wealth": 1,
-						"skill": "WerewolfInstinctReaction"
-					},
-					"done": 0,
-					"icon": {
-						"file": "ui/Icons_Resources_04.png",
-						"size": 96,
-						"x": 19,
-						"y": 13
-					},
-					"type": "Injection",
-					"price": 17,
-					"rarity": 1,
-					"iconeDone": true
-				},
-				{
-					"id": "MutationSeasonedWerewolf",
-					"name": "Stimulant d'expérience",
-					"weight": 0.3,
-					"baseBonus": [],
-					"props": {
-						"refItem": "Flask",
-						"disableLoot": true,
-						"wealth": 1,
-						"skill": "SeasonedWerewolf"
 					},
 					"done": 0,
 					"icon": {
@@ -129967,36 +129788,6 @@
 					"group": "TinkererTool"
 				},
 				{
-					"item": "WerewolvesLab",
-					"tool": "Workshop",
-					"recipe": [
-						{
-							"qty": 6,
-							"item": "Leather"
-						},
-						{
-							"qty": 6,
-							"item": "Wood"
-						},
-						{
-							"qty": 4,
-							"item": "IronOre"
-						},
-						{
-							"qty": 4,
-							"item": "Cloth"
-						},
-						{
-							"qty": 2,
-							"item": "Rope"
-						}
-					],
-					"props": {},
-					"learnCost": [],
-					"jobLevel": 1,
-					"group": "TinkererTool"
-				},
-				{
 					"item": "Stretcher",
 					"tool": "Workshop",
 					"recipe": [
@@ -135533,78 +135324,6 @@
 					"group": "AlchemistVarious"
 				},
 				{
-					"item": "MutationBraveExPrisonnerWerewolf",
-					"tool": "ApothecaryTable",
-					"recipe": [
-						{
-							"qty": 1,
-							"item": "VirginEssence"
-						},
-						{
-							"qty": 1,
-							"item": "BraveExPrisonnerManual"
-						},
-						{
-							"qty": 2,
-							"item": "Mutagen1"
-						},
-						{
-							"qty": 2,
-							"item": "Mutagen2"
-						}
-					],
-					"props": {
-						"feature": "Alazar2",
-						"require": [
-							{
-								"item": "InjectionGamma"
-							}
-						]
-					},
-					"jobLevel": 3,
-					"learnCost": [
-						{
-							"qty": 1,
-							"item": "Knowledge"
-						}
-					],
-					"group": "AlchemistVarious"
-				},
-				{
-					"item": "MutationAdaptativeWerewolf",
-					"tool": "ApothecaryTable",
-					"recipe": [
-						{
-							"qty": 1,
-							"item": "VirginEssence"
-						},
-						{
-							"qty": 2,
-							"item": "Mutagen1"
-						},
-						{
-							"qty": 1,
-							"item": "Mutagen2"
-						}
-					],
-					"props": {
-						"feature": "Alazar2",
-						"require": [
-							{
-								"item": "InjectionGamma"
-							}
-						]
-					},
-					"jobLevel": 3,
-					"learnCost": [
-						{
-							"qty": 1,
-							"item": "Knowledge"
-						}
-					],
-					"group": "AlchemistVarious"
-				},
-				{
 					"item": "MutationWerewolfNumericalStrength",
 					"tool": "ApothecaryTable",
 					"recipe": [
@@ -135681,78 +135400,6 @@
 					},
 					"jobLevel": 4,
 					"learnCost": [],
-					"group": "AlchemistVarious"
-				},
-				{
-					"item": "MutationWerewolfInstinctReaction",
-					"tool": "ApothecaryTable",
-					"recipe": [
-						{
-							"qty": 1,
-							"item": "VirginEssence"
-						},
-						{
-							"qty": 2,
-							"item": "Mutagen2"
-						},
-						{
-							"qty": 1,
-							"item": "Mutagen3"
-						}
-					],
-					"props": {
-						"feature": "Alazar2",
-						"require": [
-							{
-								"item": "InjectionGamma"
-							}
-						]
-					},
-					"jobLevel": 4,
-					"learnCost": [
-						{
-							"qty": 1,
-							"item": "Knowledge"
-						}
-					],
-					"group": "AlchemistVarious"
-				},
-				{
-					"item": "MutationSeasonedWerewolf",
-					"tool": "ApothecaryTable",
-					"recipe": [
-						{
-							"qty": 1,
-							"item": "VirginEssence"
-						},
-						{
-							"qty": 1,
-							"item": "Mutagen3"
-						},
-						{
-							"qty": 1,
-							"item": "Mutagen4"
-						},
-						{
-							"qty": 1,
-							"item": "InfectedBlood"
-						}
-					],
-					"props": {
-						"feature": "Alazar2",
-						"require": [
-							{
-								"item": "InjectionGamma"
-							}
-						]
-					},
-					"jobLevel": 5,
-					"learnCost": [
-						{
-							"qty": 1,
-							"item": "Knowledge"
-						}
-					],
 					"group": "AlchemistVarious"
 				},
 				{
@@ -178026,20 +177673,8 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 19
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "Withdrawal",
 							"learnLevel": 21
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 22
 						},
 						{
 							"skill": "CoolBlood",
@@ -178052,14 +177687,6 @@
 						{
 							"skill": "OneOnOne",
 							"learnLevel": 26
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 28
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
 						}
 					],
 					"tier": 0,
@@ -178143,7 +177770,7 @@
 							"learnLevel": 6
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilFrenzy",
 							"learnLevel": 8
 						},
 						{
@@ -178163,7 +177790,7 @@
 							"learnLevel": 14
 						},
 						{
-							"skill": "RelentlessCharge",
+							"skill": "CivilRelentlessCharge",
 							"learnLevel": 15
 						},
 						{
@@ -178179,44 +177806,20 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 19
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MasteredWhirlwind",
-							"learnLevel": 20
-						},
-						{
 							"skill": "Withdrawal",
 							"learnLevel": 21
 						},
 						{
-							"skill": "Berzerker",
-							"learnLevel": 22
+							"skill": "CoolBlood",
+							"learnLevel": 24
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilMasteredWhirlwind",
 							"learnLevel": 25
 						},
 						{
-							"skill": "CoolBlood",
-							"learnLevel": 26
-						},
-						{
 							"skill": "OneOnOne",
-							"learnLevel": 28
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
+							"learnLevel": 26
 						}
 					],
 					"tier": 0,
@@ -178486,7 +178089,7 @@
 							"learnLevel": 6
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilFrenzy",
 							"learnLevel": 8
 						},
 						{
@@ -178506,7 +178109,7 @@
 							"learnLevel": 14
 						},
 						{
-							"skill": "RelentlessCharge",
+							"skill": "CivilRelentlessCharge",
 							"learnLevel": 15
 						},
 						{
@@ -178522,44 +178125,20 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 19
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MasteredWhirlwind",
-							"learnLevel": 20
-						},
-						{
 							"skill": "Withdrawal",
 							"learnLevel": 21
 						},
 						{
-							"skill": "Berzerker",
-							"learnLevel": 22
+							"skill": "CoolBlood",
+							"learnLevel": 24
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilMasteredWhirlwind",
 							"learnLevel": 25
 						},
 						{
-							"skill": "CoolBlood",
-							"learnLevel": 26
-						},
-						{
 							"skill": "OneOnOne",
-							"learnLevel": 28
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
+							"learnLevel": 26
 						}
 					],
 					"tier": 0,
@@ -178669,9 +178248,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Taunt",
 							"minLevel": 0
 						},
@@ -178682,6 +178258,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "DefensivePosture",
@@ -178983,9 +178567,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"props": {
@@ -179048,9 +178629,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -179113,9 +178691,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -179179,9 +178754,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "DuellistInstinct",
@@ -179254,9 +178826,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "SwordSpe5Skill2",
 							"minLevel": 5
 						},
@@ -179323,9 +178892,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Aim",
 							"minLevel": 0
 						},
@@ -179336,6 +178902,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveCleave",
@@ -179626,9 +179200,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"props": {
@@ -179691,9 +179262,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"props": {
@@ -179756,9 +179324,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -179822,9 +179387,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "Subtlety",
@@ -179897,9 +179459,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "BowSpe5Skill2",
 							"minLevel": 5
 						},
@@ -179966,9 +179525,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Dash",
 							"minLevel": 0
 						},
@@ -179979,6 +179535,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveBoldness",
@@ -180265,9 +179829,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"props": {
@@ -180330,9 +179891,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -180395,9 +179953,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -180461,9 +180016,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "Ordeal",
@@ -180536,9 +180088,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "DaggerSpe5Skill2",
 							"minLevel": 5
 						},
@@ -180605,9 +180154,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Wrath",
 							"minLevel": 0
 						},
@@ -180618,6 +180164,14 @@
 						{
 							"skill": "Dash",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveBoldness",
@@ -180904,9 +180458,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -180969,9 +180520,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"props": {
@@ -181034,9 +180582,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"props": {
@@ -181100,9 +180645,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "InspiringPresence",
@@ -181175,9 +180717,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "PolearmSpe5Skill2",
 							"minLevel": 5
 						},
@@ -181244,9 +180783,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Taunt",
 							"minLevel": 0
 						},
@@ -181257,6 +180793,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "DefensivePosture",
@@ -181559,9 +181103,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -181624,9 +181165,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -181689,9 +181227,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -181754,9 +181289,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "FirstBlood",
@@ -181829,9 +181361,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "AxeSpe5Skill2",
 							"minLevel": 5
 						},
@@ -181898,9 +181427,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Taunt",
 							"minLevel": 0
 						},
@@ -181911,6 +181437,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "DefensivePosture",
@@ -182213,9 +181747,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -182278,9 +181809,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -182343,9 +181871,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -182408,9 +181933,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "Bash",
@@ -182489,9 +182011,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "MaceSpe5Skill2",
@@ -182578,9 +182097,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Taunt",
 							"minLevel": 0
 						},
@@ -182591,6 +182107,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveVictory",
@@ -182866,9 +182390,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -182934,9 +182455,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -183002,9 +182520,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -183070,9 +182585,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StancesKnowledge",
@@ -183146,9 +182658,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "FistSpe5Skill2",
@@ -183226,9 +182735,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Aim",
 							"minLevel": 0
 						},
@@ -183239,6 +182745,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveBoldness",
@@ -183515,9 +183029,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -183580,9 +183091,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -183645,9 +183153,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						}
 					],
 					"tier": 1,
@@ -183710,9 +183215,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "OpportunistEye",
@@ -183783,9 +183285,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "ReinforcedHandle",
@@ -183869,9 +183368,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Aim",
 							"minLevel": 0
 						},
@@ -183882,6 +183378,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveBoldness",
@@ -184164,9 +183668,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Inhalation"
 						},
 						{
@@ -184236,9 +183737,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "Inhalation"
@@ -184312,9 +183810,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Inhalation"
 						},
 						{
@@ -184384,9 +183879,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "Inhalation"
@@ -184468,9 +183960,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "Inhalation"
 						},
 						{
@@ -184537,6 +184026,10 @@
 					"equipment": [],
 					"baseSkills": [
 						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
 							"skill": "Dash",
 							"minLevel": 1
 						},
@@ -184569,6 +184062,14 @@
 							"minLevel": 2
 						},
 						{
+							"skill": "CrawlerPoisonnedClaws",
+							"minLevel": 2
+						},
+						{
+							"skill": "ContagiousFury",
+							"minLevel": 2
+						},
+						{
 							"skill": "BraveBoldness",
 							"minLevel": 3
 						},
@@ -184594,10 +184095,6 @@
 						},
 						{
 							"skill": "S_Captured_3_1",
-							"minLevel": 5
-						},
-						{
-							"skill": "S_Captured_5_1",
 							"minLevel": 5
 						},
 						{
@@ -184635,6 +184132,195 @@
 						{
 							"skill": "ClassSpecialization",
 							"minLevel": 12
+						},
+						{
+							"skill": "ActionMaker",
+							"minLevel": 15
+						},
+						{
+							"skill": "MedicalFormation",
+							"minLevel": 15
+						},
+						{
+							"skill": "AfflictingHits",
+							"minLevel": 15
+						},
+						{
+							"skill": "RawStrength",
+							"minLevel": 15
+						},
+						{
+							"skill": "CrazyGambler",
+							"minLevel": 15
+						},
+						{
+							"skill": "ExtremeStability",
+							"minLevel": 15
+						},
+						{
+							"skill": "NumbersPressure",
+							"minLevel": 15
+						},
+						{
+							"skill": "BrutalRelentlessness",
+							"minLevel": 15
+						},
+						{
+							"skill": "ChampionsKiller",
+							"minLevel": 15
+						},
+						{
+							"skill": "MassCleaner",
+							"minLevel": 15
+						},
+						{
+							"skill": "DamagePath",
+							"minLevel": 18
+						},
+						{
+							"skill": "TankPath",
+							"minLevel": 18
+						},
+						{
+							"skill": "MastodontPath",
+							"minLevel": 18,
+							"requires": "BrutalWave"
+						},
+						{
+							"skill": "AgilePath",
+							"minLevel": 18
+						},
+						{
+							"skill": "MobileSwiftPath",
+							"minLevel": 18
+						},
+						{
+							"skill": "DistancePath",
+							"minLevel": 18,
+							"requires": "SpecializedShot"
+						},
+						{
+							"skill": "Lv20Boost",
+							"minLevel": 20
+						},
+						{
+							"skill": "ConstitutionTraining",
+							"minLevel": 20
+						},
+						{
+							"skill": "StrengthTraining",
+							"minLevel": 20
+						},
+						{
+							"skill": "AgileTraining",
+							"minLevel": 20
+						},
+						{
+							"skill": "ArmorTraining",
+							"minLevel": 20
+						},
+						{
+							"skill": "EnragedPassiveSkill",
+							"minLevel": 22
+						},
+						{
+							"skill": "Berzerker",
+							"minLevel": 22
+						},
+						{
+							"skill": "TacticalAdaptation",
+							"minLevel": 22
+						},
+						{
+							"skill": "FullHealthStrength",
+							"minLevel": 22
+						},
+						{
+							"skill": "GrowingResistance",
+							"minLevel": 22
+						},
+						{
+							"skill": "UnkillableSurvivor",
+							"minLevel": 22
+						},
+						{
+							"skill": "Uncontrollable",
+							"minLevel": 25
+						},
+						{
+							"skill": "LossOfControl",
+							"minLevel": 25
+						},
+						{
+							"skill": "PackLeader",
+							"minLevel": 25
+						},
+						{
+							"skill": "StanceDancing",
+							"minLevel": 25
+						},
+						{
+							"skill": "CombatFlow",
+							"minLevel": 25
+						},
+						{
+							"skill": "FireResistant",
+							"minLevel": 25
+						},
+						{
+							"skill": "FlowOfLife",
+							"minLevel": 28
+						},
+						{
+							"skill": "IronGiant",
+							"minLevel": 28,
+							"requires": "BrutalWave"
+						},
+						{
+							"skill": "StrengthOfSwiftness",
+							"minLevel": 28
+						},
+						{
+							"skill": "SneakyTactic",
+							"minLevel": 28
+						},
+						{
+							"skill": "DeadlyShadow",
+							"minLevel": 28
+						},
+						{
+							"skill": "ConfidentShooter",
+							"minLevel": 28,
+							"requires": "SpecializedShot"
+						},
+						{
+							"skill": "GunnerEssence",
+							"minLevel": 28,
+							"requires": "SpecializedShot"
+						},
+						{
+							"skill": "PermanentRage",
+							"minLevel": 30
+						},
+						{
+							"skill": "BloodyMadness",
+							"minLevel": 30
+						},
+						{
+							"skill": "SurvivalWill",
+							"minLevel": 30
+						},
+						{
+							"skill": "Undaunted",
+							"minLevel": 30
+						},
+						{
+							"skill": "TacticalMaster",
+							"minLevel": 30
+						},
+						{
+							"skill": "SpiritOfFreedom",
+							"minLevel": 30
 						}
 					],
 					"tier": 0,
@@ -184718,20 +184404,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -184851,20 +184525,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -184994,20 +184656,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -185127,20 +184777,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -185263,20 +184901,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -185402,20 +185028,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -185538,20 +185152,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -185670,36 +185272,36 @@
 							"learnLevel": 15
 						},
 						{
+							"skill": "AgilePath",
+							"learnLevel": 16
+						},
+						{
 							"skill": "OutlawsMasterSkill",
 							"learnLevel": 18
+						},
+						{
+							"skill": "PoisonedWhirlwind",
+							"learnLevel": 19
 						},
 						{
 							"skill": "Lv20Boost",
 							"learnLevel": 20
 						},
 						{
-							"skill": "PoisonedWhirlwind",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
+							"skill": "Unstoppable",
 							"learnLevel": 22
 						},
 						{
-							"skill": "Unstoppable",
-							"learnLevel": 25
-						},
-						{
 							"skill": "FullHealthStrength",
-							"learnLevel": 28
+							"learnLevel": 24
 						},
 						{
 							"skill": "PermanentRage",
-							"learnLevel": 30
+							"learnLevel": 26
 						},
 						{
 							"skill": "SneakyTactic",
-							"learnLevel": 30
+							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -185804,20 +185406,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -185920,20 +185510,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -186036,20 +185614,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -186155,20 +185721,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -186274,20 +185828,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -186394,20 +185936,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -186510,32 +186040,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "WeakeningShock",
 							"learnLevel": 20
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
-						},
-						{
-							"skill": "FlowOfLife",
-							"learnLevel": 30
 						},
 						{
 							"skill": "DesertersChampionSkill",
@@ -187418,20 +186928,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -187564,20 +187062,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -187710,20 +187196,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -187859,20 +187333,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188014,20 +187476,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188169,20 +187619,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188310,36 +187748,36 @@
 							"learnLevel": 15
 						},
 						{
+							"skill": "DistancePath",
+							"learnLevel": 16
+						},
+						{
 							"skill": "GuardsMasterSkill",
 							"learnLevel": 18
+						},
+						{
+							"skill": "Barrage",
+							"learnLevel": 19
 						},
 						{
 							"skill": "Lv20Boost",
 							"learnLevel": 20
 						},
 						{
-							"skill": "Barrage",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
+							"skill": "LoneWolf",
 							"learnLevel": 22
 						},
 						{
-							"skill": "LoneWolf",
-							"learnLevel": 25
-						},
-						{
 							"skill": "FullHealthStrength",
-							"learnLevel": 28
+							"learnLevel": 24
 						},
 						{
 							"skill": "ConfidentShooter",
-							"learnLevel": 30
+							"learnLevel": 26
 						},
 						{
 							"skill": "TacticalMaster",
-							"learnLevel": 30
+							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188451,20 +187889,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188573,20 +187999,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188695,20 +188109,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188820,20 +188222,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -188945,20 +188335,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -189078,20 +188456,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -189195,36 +188561,36 @@
 							"learnLevel": 15
 						},
 						{
+							"skill": "MastodontPath",
+							"learnLevel": 16
+						},
+						{
 							"skill": "GuardsMasterSkill",
 							"learnLevel": 18
+						},
+						{
+							"skill": "SpearsWall",
+							"learnLevel": 19
 						},
 						{
 							"skill": "Lv20Boost",
 							"learnLevel": 20
 						},
 						{
-							"skill": "SpearsWall",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
+							"skill": "Swiftness",
 							"learnLevel": 22
 						},
 						{
-							"skill": "Swiftness",
-							"learnLevel": 25
-						},
-						{
 							"skill": "Berzerker",
-							"learnLevel": 28
+							"learnLevel": 24
 						},
 						{
 							"skill": "StrengthOfSwiftness",
-							"learnLevel": 30
+							"learnLevel": 26
 						},
 						{
 							"skill": "BloodyMadness",
-							"learnLevel": 30
+							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -189328,20 +188694,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -189444,20 +188798,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -189570,20 +188912,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "AdvancedMedicine",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -189687,20 +189017,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -189806,20 +189124,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -189925,20 +189231,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -190045,20 +189339,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -190160,32 +189442,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "WeakeningShock",
 							"learnLevel": 20
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
-						},
-						{
-							"skill": "FlowOfLife",
-							"learnLevel": 30
-						},
-						{
-							"skill": "Undaunted",
-							"learnLevel": 30
 						},
 						{
 							"skill": "CompanionsChampionSkill",
@@ -190290,20 +189552,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -190406,20 +189656,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -190532,20 +189770,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -190648,20 +189874,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -190767,20 +189981,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -190887,20 +190089,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -191006,20 +190196,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -191118,36 +190296,36 @@
 							"learnLevel": 15
 						},
 						{
+							"skill": "MastodontPath",
+							"learnLevel": 16
+						},
+						{
 							"skill": "InquisitionMasterSkill",
 							"learnLevel": 18
+						},
+						{
+							"skill": "DestabilisingStrike",
+							"learnLevel": 19
 						},
 						{
 							"skill": "Lv20Boost",
 							"learnLevel": 20
 						},
 						{
-							"skill": "DestabilisingStrike",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
+							"skill": "DefensiveRiposte",
 							"learnLevel": 22
 						},
 						{
-							"skill": "DefensiveRiposte",
-							"learnLevel": 25
-						},
-						{
 							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
+							"learnLevel": 24
 						},
 						{
 							"skill": "StrengthOfSwiftness",
-							"learnLevel": 30
+							"learnLevel": 26
 						},
 						{
 							"skill": "BloodyMadness",
-							"learnLevel": 30
+							"learnLevel": 28
 						},
 						{
 							"skill": "InquisitionChampionSkill",
@@ -191265,20 +190443,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -191388,20 +190554,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -191513,20 +190667,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -191639,20 +190781,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -191773,20 +190903,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -191915,20 +191033,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "AdvancedMedicine",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -192041,20 +191147,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -192167,32 +191261,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "Barrage",
 							"learnLevel": 20
 						},
 						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
-						},
-						{
-							"skill": "ConfidentShooter",
-							"learnLevel": 30
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
 						},
 						{
 							"skill": "TrackersChampionSkill",
@@ -192318,20 +191392,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -192452,20 +191514,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -192578,20 +191628,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -192716,20 +191754,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -192853,20 +191879,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -192990,20 +192004,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -193127,20 +192129,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -193256,36 +192246,36 @@
 							"learnLevel": 15
 						},
 						{
+							"skill": "MastodontPath",
+							"learnLevel": 16
+						},
+						{
 							"skill": "AlazarMasterSkill",
 							"learnLevel": 18
+						},
+						{
+							"skill": "DestabilisingStrike",
+							"learnLevel": 19
 						},
 						{
 							"skill": "Lv20Boost",
 							"learnLevel": 20
 						},
 						{
-							"skill": "DestabilisingStrike",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MastodontPath",
+							"skill": "Intervention",
 							"learnLevel": 22
 						},
 						{
-							"skill": "Intervention",
-							"learnLevel": 25
-						},
-						{
 							"skill": "Berzerker",
-							"learnLevel": 28
+							"learnLevel": 24
 						},
 						{
 							"skill": "StrengthOfSwiftness",
-							"learnLevel": 30
+							"learnLevel": 26
 						},
 						{
 							"skill": "SurvivalWill",
-							"learnLevel": 30
+							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -193389,20 +192379,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -193506,20 +192484,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -193625,20 +192591,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -193744,20 +192698,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -193863,20 +192805,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -193979,32 +192909,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "SharpWhirlwind",
 							"learnLevel": 20
 						},
 						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
-						},
-						{
-							"skill": "StrengthOfSwiftness",
-							"learnLevel": 30
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
 						},
 						{
 							"skill": "GuardsChampionSkill",
@@ -194108,20 +193018,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194227,20 +193125,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194343,20 +193229,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194462,20 +193336,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194582,20 +193444,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194701,20 +193551,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194817,32 +193655,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "DestabilisingStrike",
 							"learnLevel": 20
 						},
 						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
-						},
-						{
-							"skill": "FlowOfLife",
-							"learnLevel": 30
-						},
-						{
-							"skill": "Undaunted",
-							"learnLevel": 30
 						},
 						{
 							"skill": "OutlawsChampionSkill",
@@ -194946,20 +193764,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195062,20 +193868,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195181,20 +193975,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195300,20 +194082,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "LoneWolf",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195422,20 +194192,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MobileSwiftPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Unstoppable",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195542,20 +194300,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195657,32 +194403,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "SharpWhirlwind",
 							"learnLevel": 20
 						},
 						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
-						},
-						{
-							"skill": "FlowOfLife",
-							"learnLevel": 30
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
 						},
 						{
 							"skill": "SkelmarsChampionSkill",
@@ -195787,20 +194513,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "FullHealthStrength",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -195906,20 +194620,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DistancePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Anticipation",
 							"learnLevel": 25
-						},
-						{
-							"skill": "TacticalAdaptation",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -196032,20 +194734,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "AdvancedMedicine",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -196149,20 +194839,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "DamagePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Intervention",
 							"learnLevel": 25
-						},
-						{
-							"skill": "EnragedPassiveSkill",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -196264,24 +194942,12 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "AxeSpe5Skill1",
 							"learnLevel": 20
 						},
 						{
-							"skill": "MastodontPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -196387,20 +195053,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "AgilePath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "Swiftness",
 							"learnLevel": 25
-						},
-						{
-							"skill": "Berzerker",
-							"learnLevel": 28
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -196506,28 +195160,8 @@
 							"learnLevel": 20
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "TankPath",
-							"learnLevel": 22
-						},
-						{
 							"skill": "DefensiveRiposte",
 							"learnLevel": 25
-						},
-						{
-							"skill": "UnkillableSurvivor",
-							"learnLevel": 28
-						},
-						{
-							"skill": "StrengthOfSwiftness",
-							"learnLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
 						},
 						{
 							"skill": "AlazarChampionSkill",
@@ -203210,7 +201844,7 @@
 							"learnLevel": 6
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilFrenzy",
 							"learnLevel": 8
 						},
 						{
@@ -203230,7 +201864,7 @@
 							"learnLevel": 14
 						},
 						{
-							"skill": "RelentlessCharge",
+							"skill": "CivilRelentlessCharge",
 							"learnLevel": 15
 						},
 						{
@@ -203246,44 +201880,20 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 19
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "MasteredWhirlwind",
-							"learnLevel": 20
-						},
-						{
 							"skill": "Withdrawal",
 							"learnLevel": 21
 						},
 						{
-							"skill": "Berzerker",
-							"learnLevel": 22
+							"skill": "CoolBlood",
+							"learnLevel": 24
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilMasteredWhirlwind",
 							"learnLevel": 25
 						},
 						{
-							"skill": "CoolBlood",
-							"learnLevel": 26
-						},
-						{
 							"skill": "OneOnOne",
-							"learnLevel": 28
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
+							"learnLevel": 26
 						}
 					],
 					"tier": 0,
@@ -207262,10 +205872,6 @@
 							"learnLevel": 16
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "DefensivePosture",
 							"minLevel": 3
 						},
@@ -207575,10 +206181,6 @@
 						{
 							"skill": "MonstrousCrawlerStrike",
 							"learnLevel": 16
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
 						},
 						{
 							"skill": "CrawlerProjectionShot",
@@ -207892,10 +206494,6 @@
 							"learnLevel": 16
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "SnowCrawlerProjectionBomb",
 							"minLevel": 3
 						},
@@ -208202,10 +206800,6 @@
 						{
 							"skill": "MonstrousSeaCrawlerStrike",
 							"learnLevel": 16
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
 						},
 						{
 							"skill": "SeaCrawlerPassingThroughProjection",
@@ -212403,7 +210997,7 @@
 							"learnLevel": 6
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilFrenzy",
 							"learnLevel": 8
 						},
 						{
@@ -212423,7 +211017,7 @@
 							"learnLevel": 14
 						},
 						{
-							"skill": "RelentlessCharge",
+							"skill": "CivilRelentlessCharge",
 							"learnLevel": 15
 						},
 						{
@@ -212439,44 +211033,20 @@
 							"learnLevel": 18
 						},
 						{
-							"skill": "TankPath",
-							"learnLevel": 19
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
-							"skill": "Estocade",
-							"learnLevel": 20
-						},
-						{
 							"skill": "Withdrawal",
 							"learnLevel": 21
 						},
 						{
-							"skill": "Berzerker",
-							"learnLevel": 22
+							"skill": "CoolBlood",
+							"learnLevel": 24
 						},
 						{
-							"skill": "Frenzy",
+							"skill": "CivilMasteredWhirlwind",
 							"learnLevel": 25
 						},
 						{
-							"skill": "CoolBlood",
-							"learnLevel": 26
-						},
-						{
 							"skill": "OneOnOne",
-							"learnLevel": 28
-						},
-						{
-							"skill": "PermanentRage",
-							"learnLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"learnLevel": 30
+							"learnLevel": 26
 						}
 					],
 					"tier": 0,
@@ -217185,10 +215755,6 @@
 							"learnLevel": 16
 						},
 						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
-						},
-						{
 							"skill": "DefensivePosture",
 							"minLevel": 3
 						},
@@ -217507,10 +216073,6 @@
 						{
 							"skill": "MonstrousCrawlerStrike",
 							"learnLevel": 16
-						},
-						{
-							"skill": "Lv20Boost",
-							"learnLevel": 20
 						},
 						{
 							"skill": "CrawlerProjectionShot",
@@ -227822,9 +226384,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -227854,6 +226413,14 @@
 						{
 							"skill": "FirstAid",
 							"minLevel": 0
+						},
+						{
+							"skill": "S_Captured_5_1",
+							"minLevel": 1
+						},
+						{
+							"skill": "CountKills",
+							"minLevel": 1
 						},
 						{
 							"skill": "BraveDuel",
@@ -228395,9 +226962,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -228472,9 +227036,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -228553,9 +227114,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -228630,9 +227188,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -228711,9 +227266,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -228788,9 +227340,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -228869,9 +227418,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -228946,9 +227492,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -229027,9 +227570,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229104,9 +227644,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -229185,9 +227722,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229262,9 +227796,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -229343,9 +227874,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229420,9 +227948,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -229501,9 +228026,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229578,9 +228100,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -229659,9 +228178,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229736,9 +228252,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -229817,9 +228330,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229896,9 +228406,6 @@
 							"skill": "GroupDamageNumericalStrength"
 						},
 						{
-							"skill": "CountKills"
-						},
-						{
 							"skill": "StanceSwitch"
 						},
 						{
@@ -229973,9 +228480,6 @@
 						},
 						{
 							"skill": "GroupDamageNumericalStrength"
-						},
-						{
-							"skill": "CountKills"
 						},
 						{
 							"skill": "StanceSwitch"
@@ -237646,998 +236150,6 @@
 					"iconeDone": true
 				},
 				{
-					"id": "PermanentWerewolf",
-					"weaponTypes": [],
-					"equipment": [],
-					"baseSkills": [
-						{
-							"skill": "ArteryBite"
-						},
-						{
-							"skill": "SavageRun"
-						},
-						{
-							"skill": "SharpTeeth"
-						},
-						{
-							"skill": "FurProtection"
-						},
-						{
-							"skill": "LycanThirst"
-						},
-						{
-							"skill": "WerewolfCountKills"
-						},
-						{
-							"skill": "AnimalWill"
-						},
-						{
-							"skill": "WerewolfSlashes",
-							"learnLevel": 8
-						},
-						{
-							"skill": "WerewolfStrike",
-							"learnLevel": 16
-						},
-						{
-							"skill": "WerewolfWrath",
-							"learnLevel": 24
-						},
-						{
-							"skill": "BattleBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "DefenseBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "ValorBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "Pack",
-							"minLevel": 3
-						},
-						{
-							"skill": "SenseOfSacrifice",
-							"minLevel": 3
-						},
-						{
-							"skill": "ThickSkin",
-							"minLevel": 4
-						},
-						{
-							"skill": "GoodCompanion",
-							"minLevel": 4
-						},
-						{
-							"skill": "CarnivorousDiet",
-							"minLevel": 5
-						},
-						{
-							"skill": "LockingHisWounds",
-							"minLevel": 5
-						},
-						{
-							"skill": "IncreasedStrength",
-							"minLevel": 6
-						},
-						{
-							"skill": "IncreasedCritical",
-							"minLevel": 6
-						},
-						{
-							"skill": "IncreasedMovement",
-							"minLevel": 6
-						},
-						{
-							"skill": "ShaggyCreature",
-							"minLevel": 8
-						},
-						{
-							"skill": "Watchwolf",
-							"minLevel": 8
-						},
-						{
-							"skill": "BornHunter",
-							"minLevel": 8
-						},
-						{
-							"skill": "IncreasedConstitution",
-							"minLevel": 10
-						},
-						{
-							"skill": "HeavyFat",
-							"minLevel": 10
-						},
-						{
-							"skill": "SteelSkin",
-							"minLevel": 10
-						},
-						{
-							"skill": "PrimalReflexes",
-							"minLevel": 12
-						},
-						{
-							"skill": "MoonHowl",
-							"minLevel": 12
-						},
-						{
-							"skill": "Jostling",
-							"minLevel": 12
-						},
-						{
-							"skill": "InjuredAndDangerous",
-							"minLevel": 12
-						},
-						{
-							"skill": "CorneredBeast",
-							"minLevel": 14
-						},
-						{
-							"skill": "ResilientBeast",
-							"minLevel": 14
-						},
-						{
-							"skill": "CursedBeast",
-							"minLevel": 14
-						},
-						{
-							"skill": "GroupDamageNumericalStrength",
-							"minLevel": 14
-						},
-						{
-							"skill": "DefensivePosture",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveDuel",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveVictory",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveBoldness",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveSupport",
-							"minLevel": 15
-						},
-						{
-							"skill": "AnimalInstinctiveRipost",
-							"minLevel": 18
-						},
-						{
-							"skill": "AnimalInstinctiveAttack",
-							"minLevel": 18
-						},
-						{
-							"skill": "Untouchable",
-							"minLevel": 18
-						},
-						{
-							"skill": "GainStatsOnkill",
-							"minLevel": 18
-						},
-						{
-							"skill": "Lv20Boost",
-							"minLevel": 20
-						},
-						{
-							"skill": "ConstitutionTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "StrengthTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "AgileTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "ArmorTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "EnragedBeast",
-							"minLevel": 22
-						},
-						{
-							"skill": "CalmedBeast",
-							"minLevel": 22
-						},
-						{
-							"skill": "SwiftBeast",
-							"minLevel": 22
-						},
-						{
-							"skill": "Unstoppable",
-							"minLevel": 22
-						},
-						{
-							"skill": "AnimalNobleSoul",
-							"minLevel": 22
-						},
-						{
-							"skill": "LoneAnimalSoul",
-							"minLevel": 22
-						},
-						{
-							"skill": "BestialStrength",
-							"minLevel": 25
-						},
-						{
-							"skill": "FlowOfLife",
-							"minLevel": 25
-						},
-						{
-							"skill": "BloodGiven",
-							"minLevel": 25
-						},
-						{
-							"skill": "TerrifyingHowl",
-							"minLevel": 28
-						},
-						{
-							"skill": "PrimalShockwave",
-							"minLevel": 28
-						},
-						{
-							"skill": "ResonanceHit",
-							"minLevel": 28
-						},
-						{
-							"skill": "HurtfulWaves",
-							"minLevel": 28
-						},
-						{
-							"skill": "PermanentRage",
-							"minLevel": 30
-						},
-						{
-							"skill": "BloodyMadness",
-							"minLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"minLevel": 30
-						},
-						{
-							"skill": "Undaunted",
-							"minLevel": 30
-						},
-						{
-							"skill": "TacticalMaster",
-							"minLevel": 30
-						},
-						{
-							"skill": "SpiritOfFreedom",
-							"minLevel": 30
-						}
-					],
-					"tier": 0,
-					"timelinePriority": 0,
-					"rarity": 0,
-					"props": {
-						"isAnimal": true,
-						"engagedDistance": 0.5,
-						"hitRadius": 0.5,
-						"dailyFood": 12,
-						"feature": "Alazar2",
-						"flags": 1,
-						"trait": "Carnivorous",
-						"powerScale": 1.5,
-						"cameraGroup": 5,
-						"modelScale": 1.25
-					},
-					"stats": [
-						{
-							"value": 24,
-							"attribute": "Strength",
-							"upValue": 360
-						},
-						{
-							"value": 16,
-							"attribute": "Dexterity",
-							"upValue": 160
-						},
-						{
-							"value": 120,
-							"attribute": "Constitution",
-							"upValue": 3600
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 5,
-							"attribute": "VisionRange"
-						},
-						{
-							"value": 10,
-							"attribute": "Movement"
-						},
-						{
-							"value": 10,
-							"attribute": "Willpower"
-						}
-					],
-					"model": "chars/Werewolf/Model_Small.fbx",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_04_96PX.png",
-						"size": 96,
-						"x": 3,
-						"y": 17
-					},
-					"name": "Lycanthrope stabilisé",
-					"iconeDone": true
-				},
-				{
-					"id": "PermanentWerewolfBear",
-					"weaponTypes": [],
-					"equipment": [],
-					"baseSkills": [
-						{
-							"skill": "BloodyRage"
-						},
-						{
-							"skill": "MonstrousRale"
-						},
-						{
-							"skill": "OpportunistPredator"
-						},
-						{
-							"skill": "FurProtection"
-						},
-						{
-							"skill": "LycanThirst"
-						},
-						{
-							"skill": "WerewolfCountKills"
-						},
-						{
-							"skill": "AnimalWill"
-						},
-						{
-							"skill": "WerewolfSlashes",
-							"learnLevel": 8
-						},
-						{
-							"skill": "WerewolfStrike",
-							"learnLevel": 16
-						},
-						{
-							"skill": "WerewolfWrath",
-							"learnLevel": 24
-						},
-						{
-							"skill": "BattleBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "DefenseBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "ValorBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "Pack",
-							"minLevel": 3
-						},
-						{
-							"skill": "SenseOfSacrifice",
-							"minLevel": 3
-						},
-						{
-							"skill": "ThickSkin",
-							"minLevel": 4
-						},
-						{
-							"skill": "GoodCompanion",
-							"minLevel": 4
-						},
-						{
-							"skill": "CarnivorousDiet",
-							"minLevel": 5
-						},
-						{
-							"skill": "LockingHisWounds",
-							"minLevel": 5
-						},
-						{
-							"skill": "IncreasedStrength",
-							"minLevel": 6
-						},
-						{
-							"skill": "IncreasedCritical",
-							"minLevel": 6
-						},
-						{
-							"skill": "IncreasedMovement",
-							"minLevel": 6
-						},
-						{
-							"skill": "ShaggyCreature",
-							"minLevel": 8
-						},
-						{
-							"skill": "Watchwolf",
-							"minLevel": 8
-						},
-						{
-							"skill": "BornHunter",
-							"minLevel": 8
-						},
-						{
-							"skill": "IncreasedConstitution",
-							"minLevel": 10
-						},
-						{
-							"skill": "HeavyFat",
-							"minLevel": 10
-						},
-						{
-							"skill": "SteelSkin",
-							"minLevel": 10
-						},
-						{
-							"skill": "PrimalReflexes",
-							"minLevel": 12
-						},
-						{
-							"skill": "MoonHowl",
-							"minLevel": 12
-						},
-						{
-							"skill": "Jostling",
-							"minLevel": 12
-						},
-						{
-							"skill": "InjuredAndDangerous",
-							"minLevel": 12
-						},
-						{
-							"skill": "CorneredBeast",
-							"minLevel": 14
-						},
-						{
-							"skill": "ResilientBeast",
-							"minLevel": 14
-						},
-						{
-							"skill": "CursedBeast",
-							"minLevel": 14
-						},
-						{
-							"skill": "GroupDamageNumericalStrength",
-							"minLevel": 14
-						},
-						{
-							"skill": "DefensivePosture",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveDuel",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveVictory",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveBoldness",
-							"minLevel": 15
-						},
-						{
-							"skill": "BraveSupport",
-							"minLevel": 15
-						},
-						{
-							"skill": "AnimalInstinctiveRipost",
-							"minLevel": 18
-						},
-						{
-							"skill": "AnimalInstinctiveAttack",
-							"minLevel": 18
-						},
-						{
-							"skill": "Untouchable",
-							"minLevel": 18
-						},
-						{
-							"skill": "GainStatsOnkill",
-							"minLevel": 18
-						},
-						{
-							"skill": "Lv20Boost",
-							"minLevel": 20
-						},
-						{
-							"skill": "ConstitutionTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "StrengthTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "AgileTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "ArmorTraining",
-							"minLevel": 20
-						},
-						{
-							"skill": "EnragedBeast",
-							"minLevel": 22
-						},
-						{
-							"skill": "CalmedBeast",
-							"minLevel": 22
-						},
-						{
-							"skill": "SwiftBeast",
-							"minLevel": 22
-						},
-						{
-							"skill": "Unstoppable",
-							"minLevel": 22
-						},
-						{
-							"skill": "AnimalNobleSoul",
-							"minLevel": 22
-						},
-						{
-							"skill": "LoneAnimalSoul",
-							"minLevel": 22
-						},
-						{
-							"skill": "BestialStrength",
-							"minLevel": 25
-						},
-						{
-							"skill": "FlowOfLife",
-							"minLevel": 25
-						},
-						{
-							"skill": "BloodGiven",
-							"minLevel": 25
-						},
-						{
-							"skill": "TerrifyingHowl",
-							"minLevel": 28
-						},
-						{
-							"skill": "PrimalShockwave",
-							"minLevel": 28
-						},
-						{
-							"skill": "ResonanceHit",
-							"minLevel": 28
-						},
-						{
-							"skill": "HurtfulWaves",
-							"minLevel": 28
-						},
-						{
-							"skill": "PermanentRage",
-							"minLevel": 30
-						},
-						{
-							"skill": "BloodyMadness",
-							"minLevel": 30
-						},
-						{
-							"skill": "SurvivalWill",
-							"minLevel": 30
-						},
-						{
-							"skill": "Undaunted",
-							"minLevel": 30
-						},
-						{
-							"skill": "TacticalMaster",
-							"minLevel": 30
-						},
-						{
-							"skill": "SpiritOfFreedom",
-							"minLevel": 30
-						}
-					],
-					"tier": 0,
-					"timelinePriority": 0,
-					"rarity": 1,
-					"props": {
-						"isAnimal": true,
-						"engagedDistance": 0.45,
-						"hitRadius": 0.5,
-						"dailyFood": 12,
-						"feature": "Alazar2",
-						"flags": 1,
-						"status": [
-							{
-								"kind": "Unwavering",
-								"count": 1
-							}
-						],
-						"trait": "Carnivorous",
-						"powerScale": 2.5,
-						"parentCategory": "Werewolf",
-						"cameraGroup": 5,
-						"modelScale": 1.35
-					},
-					"stats": [
-						{
-							"value": 24,
-							"attribute": "Strength",
-							"upValue": 360
-						},
-						{
-							"value": 16,
-							"attribute": "Dexterity",
-							"upValue": 160
-						},
-						{
-							"value": 300,
-							"attribute": "Constitution",
-							"upValue": 8800
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 5,
-							"attribute": "VisionRange"
-						},
-						{
-							"value": 10,
-							"attribute": "Movement"
-						},
-						{
-							"value": 10,
-							"attribute": "Willpower"
-						}
-					],
-					"model": "chars/Werewolf/Model_Big.fbx",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_04_96PX.png",
-						"size": 96,
-						"x": 9,
-						"y": 19
-					},
-					"name": "Lycanthrope hypertrophié stabilisé",
-					"iconeDone": true
-				},
-				{
-					"id": "SteelWerewolf",
-					"weaponTypes": [],
-					"equipment": [],
-					"baseSkills": [
-						{
-							"skill": "ArteryBite"
-						},
-						{
-							"skill": "SavageRun"
-						},
-						{
-							"skill": "SharpTeeth"
-						},
-						{
-							"skill": "FurProtection"
-						},
-						{
-							"skill": "LycanThirst"
-						},
-						{
-							"skill": "WerewolfCountKills"
-						},
-						{
-							"skill": "OnlySkilledWereWolf"
-						},
-						{
-							"skill": "WerewolfCarnivorousDiet",
-							"learnLevel": 3
-						},
-						{
-							"skill": "WerewolfThickLeather",
-							"learnLevel": 5
-						},
-						{
-							"skill": "WerewolfLockingHisWounds",
-							"learnLevel": 6
-						},
-						{
-							"skill": "WerewolfSlashes",
-							"learnLevel": 8
-						},
-						{
-							"skill": "WerewolfIncreasedMuscles",
-							"learnLevel": 10
-						},
-						{
-							"skill": "WerewolfPreciseEye",
-							"learnLevel": 12
-						},
-						{
-							"skill": "WerewolfDynamicLegs",
-							"learnLevel": 14
-						},
-						{
-							"skill": "WerewolfStrike",
-							"learnLevel": 16
-						},
-						{
-							"skill": "SwiftWerewolf",
-							"learnLevel": 20
-						},
-						{
-							"skill": "WerewolfFightExperience",
-							"learnLevel": 22
-						},
-						{
-							"skill": "WerewolfWrath",
-							"learnLevel": 24
-						},
-						{
-							"skill": "WerewolfFlowOfLife",
-							"learnLevel": 26
-						},
-						{
-							"skill": "WerewolfHeavyShock",
-							"learnLevel": 28
-						},
-						{
-							"skill": "WerewolfBloodyMadness",
-							"learnLevel": 30
-						}
-					],
-					"tier": 0,
-					"timelinePriority": 0,
-					"rarity": 0,
-					"props": {
-						"isAnimal": true,
-						"engagedDistance": 0.5,
-						"hitRadius": 0.5,
-						"dailyFood": 12,
-						"feature": "Alazar2",
-						"flags": 1,
-						"status": [
-							{
-								"kind": "WerewolfTransformed",
-								"count": 1
-							}
-						],
-						"importantStatus": "Skilled",
-						"trait": "Werewolf",
-						"powerScale": 1.5,
-						"cameraGroup": 5,
-						"modelScale": 1.35
-					},
-					"stats": [
-						{
-							"value": 8,
-							"attribute": "Strength",
-							"upValue": 180
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 80
-						},
-						{
-							"value": 12,
-							"attribute": "Constitution",
-							"upValue": 360
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 60,
-							"attribute": "Armor",
-							"upValue": 1080
-						},
-						{
-							"value": 15,
-							"attribute": "Guard"
-						},
-						{
-							"value": 10,
-							"attribute": "Movement"
-						},
-						{
-							"value": 10,
-							"attribute": "Willpower"
-						}
-					],
-					"model": "chars/Werewolf/Model_Small.fbx",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_04_96PX.png",
-						"size": 96,
-						"x": 3,
-						"y": 17
-					},
-					"name": "Lycanthrope blindé",
-					"iconeDone": true
-				},
-				{
-					"id": "SteelWerewolfBear",
-					"weaponTypes": [],
-					"equipment": [],
-					"baseSkills": [
-						{
-							"skill": "BloodyRage"
-						},
-						{
-							"skill": "MonstrousRale"
-						},
-						{
-							"skill": "OpportunistPredator"
-						},
-						{
-							"skill": "FurProtection"
-						},
-						{
-							"skill": "LycanThirst"
-						},
-						{
-							"skill": "WerewolfCountKills"
-						},
-						{
-							"skill": "OnlySkilledWereWolf"
-						},
-						{
-							"skill": "WerewolfCarnivorousDiet",
-							"learnLevel": 3
-						},
-						{
-							"skill": "WerewolfThickLeather",
-							"learnLevel": 5
-						},
-						{
-							"skill": "WerewolfLockingHisWounds",
-							"learnLevel": 6
-						},
-						{
-							"skill": "WerewolfSlashes",
-							"learnLevel": 8
-						},
-						{
-							"skill": "WerewolfIncreasedMuscles",
-							"learnLevel": 10
-						},
-						{
-							"skill": "WerewolfPreciseEye",
-							"learnLevel": 12
-						},
-						{
-							"skill": "WerewolfDynamicLegs",
-							"learnLevel": 14
-						},
-						{
-							"skill": "WerewolfStrike",
-							"learnLevel": 16
-						},
-						{
-							"skill": "SwiftWerewolf",
-							"learnLevel": 20
-						},
-						{
-							"skill": "WerewolfFightExperience",
-							"learnLevel": 22
-						},
-						{
-							"skill": "WerewolfWrath",
-							"learnLevel": 24
-						},
-						{
-							"skill": "WerewolfFlowOfLife",
-							"learnLevel": 26
-						},
-						{
-							"skill": "WerewolfHeavyShock",
-							"learnLevel": 28
-						},
-						{
-							"skill": "WerewolfBloodyMadness",
-							"learnLevel": 30
-						}
-					],
-					"tier": 0,
-					"timelinePriority": 0,
-					"rarity": 1,
-					"props": {
-						"isAnimal": true,
-						"engagedDistance": 0.45,
-						"hitRadius": 0.5,
-						"dailyFood": 12,
-						"feature": "Alazar2",
-						"flags": 1,
-						"status": [
-							{
-								"kind": "WerewolfTransformed",
-								"count": 1
-							},
-							{
-								"kind": "Unwavering",
-								"count": 1
-							}
-						],
-						"trait": "Werewolf",
-						"importantStatus": "Skilled",
-						"powerScale": 2.5,
-						"parentCategory": "Werewolf",
-						"cameraGroup": 5,
-						"modelScale": 1.45
-					},
-					"stats": [
-						{
-							"value": 7,
-							"attribute": "Strength",
-							"upValue": 160
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 80
-						},
-						{
-							"value": 15,
-							"attribute": "Constitution",
-							"upValue": 440
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 60,
-							"attribute": "Armor",
-							"upValue": 1080
-						},
-						{
-							"value": 15,
-							"attribute": "Guard"
-						},
-						{
-							"value": 10,
-							"attribute": "Movement"
-						},
-						{
-							"value": 10,
-							"attribute": "Willpower"
-						}
-					],
-					"model": "chars/Werewolf/Model_Big.fbx",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_04_96PX.png",
-						"size": 96,
-						"x": 9,
-						"y": 19
-					},
-					"name": "Lycanthrope hypertrophié blindé",
-					"iconeDone": true
-				},
-				{
 					"id": "TrainedWolf",
 					"weaponTypes": [],
 					"baseSkills": [
@@ -241669,143 +239181,7 @@
 						},
 						{
 							"slot": 3,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 4,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 5,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 6,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 7,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 8,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 9,
 							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 10,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 11,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 12,
-							"unitClass": "PermanentWerewolf"
-						},
-						{
-							"slot": 13,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 14,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 15,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 16,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 17,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 18,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 19,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 20,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 21,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 22,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 23,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 24,
-							"unitClass": "PermanentWerewolfBear"
-						},
-						{
-							"slot": 25,
-							"unitClass": "SteelWerewolf"
-						},
-						{
-							"slot": 26,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 27,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 28,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 29,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 30,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 31,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 32,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 33,
-							"unitClass": "Werewolf"
-						},
-						{
-							"slot": 34,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 35,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 37,
-							"unitClass": "WerewolfBear"
-						},
-						{
-							"slot": 36,
-							"unitClass": "SteelWerewolfBear"
 						}
 					],
 					"id": "Werewolves",
@@ -244428,91 +241804,6 @@
 							"slot": 1,
 							"unitClass": "Werewolf",
 							"proba": 1
-						},
-						{
-							"slot": 2,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 3,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 4,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 5,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 6,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 7,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 8,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 9,
-							"unitClass": "PermanentWerewolf",
-							"proba": 1
-						},
-						{
-							"slot": 10,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 11,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 12,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 13,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 14,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 15,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 16,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 17,
-							"unitClass": "Werewolf",
-							"proba": 1
-						},
-						{
-							"slot": 18,
-							"unitClass": "SteelWerewolf",
-							"proba": 1
 						}
 					],
 					"id": "WerewolvesLight",
@@ -244530,91 +241821,6 @@
 						{
 							"slot": 1,
 							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 2,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 3,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 4,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 5,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 6,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 7,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 8,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 9,
-							"unitClass": "PermanentWerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 10,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 11,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 12,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 13,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 14,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 15,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 16,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 17,
-							"unitClass": "WerewolfBear",
-							"proba": 1
-						},
-						{
-							"slot": 18,
-							"unitClass": "SteelWerewolfBear",
 							"proba": 1
 						}
 					],
@@ -266661,8 +263867,7 @@
 						"bonuses": [
 							{
 								"bonus": "RunStamina",
-								"value": 5,
-								"title": ""
+								"value": 5
 							}
 						],
 						"attributes": [
@@ -291763,11 +288968,20 @@
 				{
 					"id": "VampirismBonusSkill",
 					"name": "Vampirisme",
-					"desc": "Chaque fois que cette unité inflige des dégâts à la [Health], elle se soigne de la moitié du montant. N'est pas compatible avec Cannibalisme.",
+					"desc": "Chaque fois que cette unité inflige des dégâts à la [Health], elle se soigne de la moitié du montant. \nN'est pas compatible avec Cannibalisme.",
 					"mode": 2,
 					"range": {},
 					"props": {},
-					"script": "function onDamageDealt(a) {\n\tif( a.damagedHealth > 0 && !skill.unit.hasSkill(Skill.Cannibalism) ) {\n\t\tspawnFx();\n\t\tskill.unit.heal(skill, (a.damagedHealth) / 2 );\n\t} \n\t\n}\n",
+					"script": "function onDamageDealt(a) {
+						if( a.damagedHealth > 0 && !skill.unit.hasSkill(Skill.Cannibalism) ) {
+							spawnFx();
+							if( skill.level == 2 && a.target.hasStatus(Status.Bleeding) ){
+								skill.unit.heal(skill, a.damagedHealth );
+							} else {
+								skill.unit.heal(skill, (a.damagedHealth) / 2 );
+							}
+						}
+					}",
 					"notes": "",
 					"icon": {
 						"file": "ui/Icons/BattleIcons96PX.png",
@@ -291775,6 +288989,13 @@
 						"x": 19,
 						"y": 9
 					},
+					"levels": [
+						{
+							"props": {},
+							"desc": "Chaque fois que cette unité inflige des dégâts à la [Health], elle se soigne de la moitié du montant, ou de l'entièreté sur les unités qui saignent. \nN'est pas compatible avec Cannibalisme."
+
+						}
+					],
 					"iconeDone": true,
 					"done": 2
 				},
@@ -294861,7 +292082,7 @@
 				{
 					"id": "BrutalWave",
 					"name": "Vague brutale",
-					"desc": "Inflige [DMG] à toutes les unités dans la zone. \nUniquement utilisable par des prisonniers libérés.",
+					"desc": "Inflige [DMG] à toutes les unités dans la zone. \nLes dégâts sont augmentés de ::value1::% contre celles sous l'effet d'un bonus.",
 					"mode": 5,
 					"range": {
 						"type": 1,
@@ -294874,21 +292095,28 @@
 						"apCost": 1,
 						"specialAnim": "AttackPower",
 						"vars": {
-							"allowed": false
+							"damageBonusValid": false,
+							"value1": 50
 						},
 						"fxSuffix": 3,
 						"isAttack": true
 					},
-					"script": "function onBeginAction() {
-						vars.allowed = false;
-						if( skill.unit.hasTrait(Trait.Freed) ) {
-							vars.allowed = true;
-						}
+					"script": "function onBeginBattle(){
+						vars.damageBonusValid = false;
 					}
 					function onEval(a) {
-						if( !skill.unit.hasTrait(Trait.Freed) ) {
-							dontAllow();
+						for( st in a.target.getAllStatus() ) {
+							if( st.isBonus ) {
+								vars.damageBonusValid = true;
+								break;
+							}
 						}
+						if( vars.damageBonusValid ) {
+							a.baseDamageBonus += vars.value1;
+						}
+					}
+					function onEndTurn(){
+						vars.damageBonusValid = false;
 					}",
 					"notes": "",
 					"icon": {
@@ -294899,13 +292127,21 @@
 					},
 					"minDmg": 6,
 					"maxDmg": 8,
+					"levels": [
+						{
+							"props": {
+								"minDmg": 7,
+								"maxDmg": 9
+							}
+						}
+					],
 					"iconeDone": true,
 					"done": 2
 				},
 				{
 					"id": "SpecializedShot",
 					"name": "Tir spécialisé",
-					"desc": "Inflige [DMG] aux cibles dans la zone.\nUniquement utilisable par des prisonniers libérés.",
+					"desc": "Inflige [DMG] aux cibles dans la zone avec ::value1::% de chances supplémentaires d'infliger un coup critique si l'unité a de l'armure.",
 					"mode": 5,
 					"range": {
 						"type": 2,
@@ -294919,20 +292155,14 @@
 						"flags": 64,
 						"apCost": 1,
 						"vars": {
-							"allowed": false
+							"value1": 20
 						},
 						"extraFx": "prefabs/fx/fight/Attack/AttackPower_B.fx",
 						"isAttack": true
 					},
-					"script": "function onBeginAction() {
-						vars.allowed = false;
-						if( skill.unit.hasTrait(Trait.Freed) ) {
-							vars.allowed = true;
-						}
-					}
-					function onEval(a) {
-						if( !skill.unit.hasTrait(Trait.Freed) ) {
-							dontAllow();
+					"script": "function onEval(a) {
+						if( a.target.armor > 0 ) {
+							a.criticalHitPercent += vars.value1;
 						}
 					}",
 					"notes": "",
@@ -294944,6 +292174,14 @@
 					},
 					"minDmg": 6,
 					"maxDmg": 8,
+					"levels": [
+						{
+							"props": {
+								"minDmg": 7,
+								"maxDmg": 9
+							}
+						}
+					],
 					"iconeDone": true,
 					"done": 2
 				},
@@ -295215,6 +292453,17 @@
 						"x": 6,
 						"y": 16
 					},
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value2": 20,
+									"armorDividerValue": 2
+								}
+							}
+
+						}
+					],
 					"iconeDone": true,
 					"done": 2
 				},
@@ -297324,7 +294573,8 @@
 					"props": {
 						"usableWhenDying": true,
 						"vars": {
-							"value1": 1
+							"value1": 1,
+							"value2": 2
 						},
 						"specialAnim": "Throw", 
 						"apCost": 1,
@@ -297337,11 +294587,15 @@
 					}
 					function onSkill() {
 						for ( t in skill.getTargets() ) {
-							if( t.target != null && !t.target.hasStatus(Status.NotCapturableUnit) && !t.target.hasStatus(Status.Skilled) &&  !t.target.hasStatus(Status.Leader) && !t.target.hasStatus(Status.Gladiator) && !t.target.hasStatus(Status.Champion) ) {
+							if( t.target != null && !t.target.hasStatus(Status.NotCapturableUnit) && !t.target.hasStatus(Status.Skilled) &&  !t.target.hasStatus(Status.Leader) && !t.target.hasStatus(Status.Gladiator) && !t.target.hasStatus(Status.Champion) && !t.target.hasSkill(Skill.RingleaderThreat) && !t.target.hasSkill(Skill.TrainedToKill) && !t.target.hasSkill(Skill.IronWill) && !t.target.hasSkill(Skill.SupportLeader) && !t.target.hasSkill(Skill.Exaltation) ) {
 								playAnim();
 								captureTarget(t);
 							} else {
-								skill.unit.gainsActionPoint(vars.value1);
+								if (isExtremeDifficulty()){
+									skill.unit.gainsActionPoint(vars.value2);
+								} else {
+									skill.unit.gainsActionPoint(vars.value1);
+								}
 								allowReplay();
 							}
 						}
@@ -298939,51 +296193,6 @@
 					"done": 2
 				},
 				{
-					"id": "WerewolfLockingHisWounds",
-					"name": "Lécher ses plaies",
-					"desc": "Cette unité soigne ::value1::% de sa [Health] maximum et se retire tous ses Malus.",
-					"mode": 4,
-					"range": {},
-					"props": {
-						"specialAnim": "Heal",
-						"apCost": 0,
-						"vars": {
-							"value1": 30
-						},
-						"needDisengaged": true,
-						"cursor": "CursorHeal",
-						"healPreview": 0.30
-					},
-					"script": "function onSkill() {
-						skill.unit.heal(skill, ceil(skill.unit.stats.health*vars.value1/100));
-						for( st in skill.unit.getAllStatus() ) {
-							if( st.isMalus && !st.isInjury) {
-								st.cancel();
-							}
-						}
-						play();
-					}",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_02_96PX.png",
-						"size": 96,
-						"x": 10,
-						"y": 6
-					},
-					"levels": [
-						{
-							"props": {
-								"vars": {
-									"value1": 40
-								},
-								"healPreview": 0.40
-							}
-						}
-					],
-					"iconeDone": true,
-					"done": 2
-				},
-				{
 					"id": "WerewolfIncreasedMuscles",
 					"name": "Musculature surdéveloppée",
 					"desc": "[Strength] et [Dexterity] augmentées de ::value1::%.",
@@ -299109,127 +296318,6 @@
 					"done": 2
 				},
 				{
-					"id": "BraveExPrisonnerWerewolf",
-					"name": "Bravoure de prisonnier lycanthrope",
-					"desc": "Chaque fois que cette unité subit des dégâts d'une compétence ou tue un ennemi, s'il s'agit d'un prisonnier libéré, ::value1::% de chance d'obtenir <apt>::value2::</apt>.",
-					"mode": 2,
-					"range": {},
-					"props": {
-						"vars": {
-							"value1": 50,
-							"value2": 1
-						},
-						"globalEvents": true
-					},
-					"script": "function onDamageDone(s) {
-						if (s.unit != null && !isGameMaster(s.unit) && s.target == skill.unit) {
-							if( skill.unit.hasTrait(Trait.Freed) ) {
-								var diceroll = random(0, 100);
-								if( diceroll <= vars.value1 ){
-									skill.unit.gainsActionPoint(vars.value2);
-								}
-							}
-						}
-					}
-					function onDamageTaken(s) {
-						if (!s.isOpportunityAttack() && s.isLastAttack() && !isGameMaster(s.unit) && s.target == skill.unit) {
-							if( skill.unit.hasTrait(Trait.Freed) ) {
-								var diceroll = random(0, 100);
-								if( diceroll <= vars.value1 ){
-									skill.unit.gainsActionPoint(vars.value2);
-								}
-							}
-						}
-					}
-					function onDeath(a) {
-						if(!a.target.isObject && a.target.side != skill.unit.side && a.unit == skill.unit ) {
-							if( skill.unit.hasTrait(Trait.Freed) ) {
-								var diceroll = random(0, 100);
-								if( diceroll <= vars.value1 ){
-									skill.unit.gainsActionPoint(vars.value2);
-									spawnFx();
-								}
-							}
-						}
-					}",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons96PX.png",
-						"size": 96,
-						"x": 17,
-						"y": 7
-					},
-					"levels": [
-						{
-							"props": {
-								"vars": {
-									"value1": 75
-								}
-							}
-						}
-					],
-					"iconeDone": true,
-					"done": 2
-				},
-				{
-					"id": "AdaptativeWerewolf",
-					"name": "Adaptation Lycanthrope",
-					"desc": "Lorsque cette unité a plus de ::value1::% de sa santé, elle a [Fury] et gagne [Riposte] en fin de tour. \nSinon, elle a [Protection] et gagne [Deflection] en fin de tour.",
-					"mode": 2,
-					"range": {},
-					"props": {
-						"tooltipStatus": [
-							{
-								"st": "Riposte"
-							},
-							{
-								"st": "Fury"
-							},
-							{
-								"st": "Protection"
-							},
-							{
-								"st": "Deflection"
-							}
-						],
-						"vars": {
-							"value1": 50
-						}
-					},
-					"script":"function onEndTurn() {
-						var p = 100 * (skill.unit.health / skill.unit.stats.health);
-						if( p > vars.value1 && !skill.unit.hasStatus(Status.Riposte) ) {
-							skill.unit.addStatus(Status.Riposte);
-							spawnFx();
-						} else {
-							skill.unit.addStatus(Status.Deflection);
-							spawnFx();
-						}
-					}
-					function onBeginAction(){
-						var p = 100 * (skill.unit.health / skill.unit.stats.health);
-						if( p > vars.value1 && !skill.unit.hasStatus(Status.Fury) ) {
-							skill.unit.addStatus(Status.Fury);
-							if( skill.unit.hasStatusPersist(Status.Protection, skill) ){
-								skill.unit.cancelStatus(Status.Protection, skill);
-							}
-							spawnFx();
-						} else {
-							skill.unit.addStatusPersist(Status.Protection, skill);
-							spawnFx();
-						}
-					}",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_02_96PX.png",
-						"size": 96,
-						"x": 4,
-						"y": 13
-					},
-					"iconeDone": true,
-					"done": 2
-				},
-				{
 					"id": "WerewolfNumericalStrength",
 					"name": "Puissance de la meute lycan",
 					"desc": "[DamageBonusPercent] augmentés de ::value1::% pour chaque allié actif (et vivant) au combat. \nNe se cumule pas avec Puissance du groupe.",
@@ -299274,45 +296362,6 @@
 					"done": 2
 				},
 				{
-					"id": "WerewolfInstinctReaction",
-					"name": "Réaction instinctive de lycanthrope",
-					"desc": "Après avoir subi une attaque, si ce lycanthrope est engagé, il a ::chanceOfRipost::% de chance d'effectuer une attaque d'opportunité contre l'unité avec laquelle il est engagé. \nDe plus, lorsqu'il attaque, ce lycanthrope a ::chanceOfAttack::% de chance d'effectuer une attaque d'opportunité contre l'unité ciblée.",
-					"mode": 2,
-					"range": {},
-					"props": {
-						"vars": {
-							"chanceOfRipost": 15,
-							"chanceOfAttack": 10
-						},
-						"tooltipStatus": [
-							{
-								"st": "OpportunityAttack"
-							}
-						]
-					},
-					"script": "function onDamageTaken(a) {
-						var rnd = random(0, 100);
-						if( skill.unit.isEngaged() && vars.chanceOfRipost >= rnd ) {
-							skill.unit.opportunityAttack(skill.unit.engagedUnit, skill);
-						}
-					}
-					function onHit(a) {
-						var rnd = random(0, 100);
-						if( vars.chanceOfAttack >= rnd ) {
-							skill.unit.opportunityAttack(a.target, skill);
-						}
-					}",
-					"notes": "",
-					"done": 2,
-					"iconeDone": true,
-					"icon": {
-						"file": "ui/Icons/BattleIcons_03_96PX.png",
-						"size": 96,
-						"x": 19,
-						"y": 0
-					}
-				},
-				{
 					"id": "WerewolfWill",
 					"name": "Volonté lycanthrope",
 					"desc": "[DamageReducePercent] réduits et [DamageBonusPercent] augmentés en fonction de la volonté.",
@@ -299337,38 +296386,6 @@
 						"size": 96,
 						"x": 6,
 						"y": 15
-					},
-					"iconeDone": true,
-					"done": 2
-				},
-				{
-					"id": "SeasonedWerewolf",
-					"name": "Lycanthrope expérimenté",
-					"desc": "[DamageBonusPercent] augmentés et [DamageTakenPercent] réduits de ::value1::%.",
-					"mode": 2,
-					"range": {},
-					"props": {
-						"vars": {
-							"value1": 25
-						},
-						"attributes": [
-							{
-								"kind": "DamageBonusPercent",
-								"value": 25
-							},
-							{
-								"kind": "DamageReducePercent",
-								"value": 25
-							}
-						]
-					},
-					"script": "",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons_02_96PX.png",
-						"size": 96,
-						"x": 0,
-						"y": 4
 					},
 					"iconeDone": true,
 					"done": 2
@@ -299480,32 +296497,35 @@
 				{
 					"id": "WerewolfBloodyMadness",
 					"name": "Folie sanguinaire",
-					"desc": "Chaque fois que cette unité tue un ennemi, elle augmente ses dégâts de ::value1::%, jusqu'à une limite de ::value2::%. \n(Cumul actuel : ::stackBonus::%)",
+					"desc": "Chaque fois que cette unité tue un ennemi, elle augmente les dégâts de sa prochaine attaque de ::value1::%. Le bonus de dégâts est cumulable. \n(Cumul actuel : ::stackBonus::%)",
 					"mode": 2,
 					"range": {},
 					"props": {
 						"globalEvents": true,
 						"vars": {
-							"value1": 10,
-							"value2": 100,
+							"killedTarget": false,
+							"value1": 25,
 							"stackCount": 0,
 							"stackBonus": 0
 						}
 					},
 					"script": "function onBeginBattle(){
 						vars.stackCount = 0;
+						vars.killedTarget = false;
 					}
 					function onDeath(a) {
 						if( a.unit == skill.unit ) {
-							if(vars.stackBonus < vars.value2) {
-								vars.stackCount++;
-							}
+							vars.killedTarget = true;
+							vars.stackCount++;
 							vars.stackBonus = vars.value1 * vars.stackCount;
 						}
 					}
 					function onSkillEval(a) {
 						for (t in a.getTargets()){
-							t.baseDamageBonus += vars.stackBonus;
+							if(vars.killedTarget){
+								t.baseDamageBonus += vars.stackBonus;
+								vars.killedTarget = false;
+							}
 						}
 					}",
 					"notes": "",
@@ -300195,8 +297215,7 @@
 						"bonuses": [
 							{
 								"bonus": "RunStamina",
-								"value": 5,
-								"title": ""
+								"value": 5
 							}
 						],
 						"attributes": [
@@ -300204,8 +297223,7 @@
 								"kind": "Transport",
 								"value": 500
 							}
-						],
-						"extraFx": ""
+						]
 					},
 					"script": "",
 					"notes": "",
@@ -300322,8 +297340,7 @@
 						"bonuses": [
 							{
 								"bonus": "RunStamina",
-								"value": 5,
-								"title": ""
+								"value": 5
 							}
 						],
 						"attributes": [
@@ -300331,8 +297348,7 @@
 								"kind": "Transport",
 								"value": 500
 							}
-						],
-						"extraFx": ""
+						]
 					},
 					"script": "",
 					"notes": "",
@@ -306128,7 +303144,7 @@
 					"script": "function onSkillEval(a) {
 						var diceroll = random(0, 100);
 						if( diceroll <= 50 ) {
-							if( skill.unit.hasSkill(CarefulStance) || skill.unit.hasStatus(Status.Surrounded) ){
+							if( skill.unit.hasSkill(Skill.CarefulStance) || skill.unit.hasStatus(Status.Surrounded) ){
 								for( t in a.getTargets() ) {
 									t.baseDamageBonus += vars.value1;
 								}
@@ -308307,76 +305323,6 @@
 						"y": 5
 					},
 					"levels": [],
-					"iconeDone": true,
-					"done": 2
-				},
-				{
-					"id": "BraveExPrisonner",
-					"name": "Bravoure de prisonnier",
-					"desc": "Chaque fois que cette unité subit des dégâts d'une compétence ou tue un ennemi, s'il s'agit d'un prisonnier libéré, ::value1::% de chance d'obtenir <apt>::value2::</apt>. Sinon, régénère ::value2::% de sa [Health] max.",
-					"mode": 2,
-					"range": {},
-					"props": {
-						"vars": {
-							"value1": 50,
-							"value2": 1
-						},
-						"globalEvents": true
-					},
-					"script": "function onDamageDone(s) {
-						if (s.unit != null && !isGameMaster(s.unit) && s.target == skill.unit) {
-							if( skill.unit.hasTrait(Trait.Freed) ) {
-								var diceroll = random(0, 100);
-								if( diceroll <= vars.value1 ){
-									skill.unit.gainsActionPoint(vars.value2);
-								}
-							} else {
-								skill.unit.heal(skill, ceil(skill.unit.stats.health*vars.value2/100));
-							}
-						}
-					}
-					function onDamageTaken(s) {
-						if (!s.isOpportunityAttack() && s.isLastAttack() && !isGameMaster(s.unit) && s.target == skill.unit) {
-							if( skill.unit.hasTrait(Trait.Freed) ) {
-								var diceroll = random(0, 100);
-								if( diceroll <= vars.value1 ){
-									skill.unit.gainsActionPoint(vars.value2);
-								}
-							} else {
-								skill.unit.heal(skill, ceil(skill.unit.stats.health*vars.value2/100));
-							}
-						}
-					}
-					function onDeath(a) {
-						if(!a.target.isObject && a.target.side != skill.unit.side && a.unit == skill.unit ) {
-							if( skill.unit.hasTrait(Trait.Freed) ) {
-								var diceroll = random(0, 100);
-								if( diceroll <= vars.value1 ){
-									skill.unit.gainsActionPoint(vars.value2);
-									spawnFx();
-								}
-							} else {
-								skill.unit.heal(skill, ceil(skill.unit.stats.health*vars.value2/100));
-								spawnFx();
-							}
-						}
-					}",
-					"notes": "",
-					"icon": {
-						"file": "ui/Icons/BattleIcons96PX.png",
-						"size": 96,
-						"x": 17,
-						"y": 7
-					},
-					"levels": [
-						{
-							"props": {
-								"vars": {
-									"value1": 75
-								}
-							}
-						}
-					],
 					"iconeDone": true,
 					"done": 2
 				},
@@ -344124,7 +341070,7 @@
 					"valueDifficulty": [
 						{
 							"difficulty": 0,
-							"value": 28
+							"value": 30
 						},
 						{
 							"difficulty": 1,
@@ -345158,6 +342104,51 @@
 					"values": [
 						{
 							"value": -1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
+						},
+						{
+							"value": 0.1
 						},
 						{
 							"value": 0.1
